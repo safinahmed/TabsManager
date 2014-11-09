@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tabs Generator</title>
+    <style>
+      body {
+        min-width: 720px;
+        overflow-x: hidden;
+      }
+	  
+	ul.tabli{
+	  min-height: 50px;
+	  width: 100%;
+	  margin: 0px 25px 10px 0px;
+	  padding: 2px;
+	  border-width: 1px;
+	  border-style: solid;
+	  -webkit-border-radius: 3px;
+	  -moz-border-radius: 3px;
+	  border-radius: 3px;
+	  list-style-type: none;
+	  list-style-position: inside;
+	  border-color: #f8e0b1;
+	  }
+	  
+	.tabli li {
+	  margin: 5px;
+	  padding: 5px;
+	  -webkit-border-radius: 4px;
+	  -moz-border-radius: 4px;
+	  border-radius: 4px;
+	  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	  background-color: #fcf8e3;
+	  border: 1px solid #fbeed5;
+	  color: #c09853;
+	  cursor: move;
+	}
+	
+	.tabli .sortable-placeholder {
+	  border: 2px dashed #f8e0b1 !important;
+	  background-color: #fefcf5 !important;
+	}
+
+	
+	.panel-opened:after {
+		font-family: 'Glyphicons Halflings';
+		content: "\e114";    
+		float: right; 
+		color: grey; 
+	}
+	.panel-closed:after {
+		font-family: 'Glyphicons Halflings';
+		content: "\e080";   
+		float: right; 
+		color: grey; 
+	}
+
+    </style>
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+<!--
+Drag and Drop List of Windows and their Tabs
+Move everything around as you want (later create tabs and save links)
+Click Save to Save all Changes
+-->
+	<script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/popup.js"></script>
+	<script src="js/jquery.sortable.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+	<br/>
+	<div class="row text-center">Drag and Drop your tabs to Rearrange them. Click Save Changes when done.</div>
+	<br/>
+    <div class="row" id="results">		
+	</div>
+	<div class="row pull-right" style="margin: 0px 10px 10px 10px;">
+		<button type="button" class="btn btn-primary" id="newWinBtn" >New Window</button>
+		<span id="message" style="color:green"></span>
+		<button type="button" class="btn btn-primary" id="saveBtn" >Save Changes</button>
+	</div>
+  </body>
+</html>
+
