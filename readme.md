@@ -1,9 +1,9 @@
 #Tabs Manager
 
-Sunday project to create a Chrome Extension that would use jQuery and Bootstrap v3
+Code for a Chrome Extension that allows you to manage your open windows and all the tabs in them
+You can drag and drop to move tabs in to other windows
+Export all tabs in a window into Bookmarks and send it to someone
 
-I decided to create an extension that allowed me to manage all my opened tabs in the different Chrome Windows. So I could click and drag the tabs to move them between existing windows and also create new windows.
+Future work is to enable closing of tabs, and saving tabs in store for later use
 
-This project also uses the [HTML5 Sortable](http://farhadi.ir/projects/html5sortable/) component for the dragging and dropping of tabs
-
-Future work is to enable closing of tabs, and saving tabs in store for future use
+This extension can be found in the Google Play Store [here](https://chrome.google.com/webstore/detail/tabs-manager/dcphilgoafamnonmalgdhkkffmobnaco)

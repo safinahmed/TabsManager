@@ -1,8 +1,9 @@
 {
     "manifest_version": 2,
     "name": "Tabs Manager",
-    "description": "Tabs Manager",
+    "description": "This extension allows your to manage your opened Windows and Tabs on Chrome. Drag and Drop to rearrange them or export as bookmarks.",
     "version": "1.0",
+    "short_name": "Tabs Manager",
     "permissions": ["tabs"],
     "browser_action": {
         "default_popup": "popup.html"
